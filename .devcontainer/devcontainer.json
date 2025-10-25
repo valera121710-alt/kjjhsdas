@@ -1,0 +1,27 @@
+{
+    "name": "Android Development",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17"
+        },
+        "ghcr.io/devcontainers/features/android-environment:1": {
+            "versions": "33.0.0",
+            "cmdline_tools_version": "9.0",
+            "build_tools_version": "33.0.0",
+            "ndk_version": "25.1.8937393",
+            "cmake_version": "3.22.1",
+            "emulator": false
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-java-pack",
+                "naco-siren.gradle-language",
+                "visualstudioexptteam.vscodeintellicode"
+            ]
+        }
+    },
+    "postCreateCommand": "echo 'Environment ready!'"
+}
